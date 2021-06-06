@@ -1,42 +1,173 @@
-.backgroundImage {
-  height: 100%;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  object-fit: cover;
-  position: absolute;
-  overflow: hidden;
-  opacity: 1;
-  transform: scale(1);
-  transform-origin: center center 0px;
-  transition: opacity 1s ease-in-out 0s;
-  z-index: 2;
-}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 
-.find {
-  max-width: 100%;
-  min-height: 60px;
-  height: 60px;
-  background-color: rgb(170, 76, 0);
-  text-align: center;
-  font-weight: 600;
-  line-height: 1.3;
-  padding-top: 0;
-  white-space: normal;
-  border-radius: 0;
-  letter-spacing: 1px;
-  padding-bottom: 0;
-  border-radius: 0 0 4px 4px;
-
-  :hover {
-    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-      0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  .backgroundImage {
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    overflow: hidden;
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: center center 0px;
+    transition: opacity 1s ease-in-out 0s;
   }
 
-  .findText {
+  .centerMenu {
+    z-index: 1;
+    position: relative;
+    margin: auto;
     width: 100%;
-    display: inherit;
-    align-items: inherit;
-    justify-content: inherit;
+    max-width: 830px;
+
+    .text {
+      text-shadow: rgba(23, 32, 38, 0.2) 0px 2px 10px,
+        rgba(23, 32, 38, 0.2) 0px 2px 4px;
+      pointer-events: none;
+      margin-bottom: 20px;
+      padding: 0px 20px;
+      position: relative;
+      z-index: 2;
+
+      h1 {
+        font-weight: 600;
+        max-width: 100%;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        margin-bottom: 0.35em;
+        text-align: center;
+        font-size: 56px;
+        line-height: 1.3;
+        letter-spacing: 0.5px;
+        margin: 0;
+      }
+    }
+
+    .searchMenu {
+      align-items: center;
+      background: #fff;
+      border-radius: 4px 4px 0 0;
+      display: flex;
+      height: 72px;
+      position: relative;
+
+      div {
+        .searchIcon {
+          cursor: pointer;
+          pointer-events: none;
+          position: absolute;
+          margin: auto 0;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          height: 36px;
+          padding-left: 16px;
+          padding-right: 19px;
+          height: 36px;
+          width: 36px;
+        }
+      }
+
+      form {
+        input {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 28px;
+          letter-spacing: 0;
+          border: 0;
+          color: #162028;
+          overflow: hidden;
+          outline: 0;
+          padding: 0 100px 0 74px;
+          text-overflow: ellipsis;
+          width: 100%;
+          background: transparent;
+          min-height: 72px;
+        }
+      }
+      .currentLocation {
+        align-items: center;
+        border-left: 1px solid #f1f2f4;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        position: absolute;
+        margin: auto 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 76px;
+
+        button {
+          max-width: 100%;
+          min-height: 42px;
+          min-width: 64px;
+          width: 100%;
+          height: 100%;
+          border: 0;
+          cursor: pointer;
+          display: inline-flex;
+          outline: 0;
+          padding: 0;
+          align-items: center;
+          justify-content: center;
+          background-color: transparent;
+          transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+            box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+          .currentIcon {
+            height: 36px;
+            width: 36px;
+          }
+        }
+      }
+    }
+
+    .findRestaurantsInYourArea {
+      :hover {
+        background-color: rgb(170, 76, 0);
+      }
+
+      button {
+        width: 100%;
+        min-height: 60px;
+        height: 60px;
+        border-radius: 0 0 4px 4px;
+        color: rgba(255, 255, 255, 1);
+        background-color: #f36d00;
+        text-align: center;
+        font-weight: 600;
+        line-height: 1.3;
+        padding-top: 0;
+        white-space: normal;
+        border-radius: 0;
+        letter-spacing: 1px;
+        padding-bottom: 0;
+        min-width: 64px;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        border: 0;
+        cursor: pointer;
+        margin: 0;
+        outline: 0;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+        span {
+          font-weight: 600;
+          line-height: 1.3;
+          white-space: normal;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+      }
+    }
   }
 }
