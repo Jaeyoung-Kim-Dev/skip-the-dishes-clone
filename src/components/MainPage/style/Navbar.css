@@ -1,0 +1,114 @@
+.navbar-container {
+  z-index: 3;
+}
+
+.navbar-container div {
+  background-color: transparent;
+  width: 100%;
+  height: 72px;
+  display: flex;
+  padding: 0 4px 0 16px;
+  z-index: 2;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-container div .logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-container div .logo a svg {
+  filter: drop-shadow(rgba(23, 32, 38, 0.2) 0px 2px 4px);
+}
+
+.navbar-container div .menu {
+  justify-content: end;
+}
+
+.navbar-container div .menu .needHelp {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1.3;
+  white-space: normal;
+  cursor: pointer;
+}
+
+.navbar-container div .menu .needHelp .icon {
+  height: 25px;
+  width: 25px;
+}
+
+.navbar-container div .menu .needHelp .text {
+  padding-left: 10px;
+  color: #fff;
+  height: 25px;
+  width: 110px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.navbar-container div .menu .country {
+  height: 25px;
+  width: 25px;
+  margin-right: 16px;
+}
+
+.navbar-container div .menu .country svg {
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+.navbar-container div .menu .divider {
+  align-self: normal;
+  padding-right: 8px;
+  border-left: 1px solid #f1f2f4;
+  color: #fff;
+  opacity: 0.3;
+}
+
+.navbar-container div .menu .login {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1.3;
+  white-space: normal;
+  cursor: pointer;
+  align-items: center;
+}
+
+.navbar-container div .menu .login .icon {
+  background: white none repeat scroll 0% 0%;
+  border-radius: 50%;
+  box-shadow: rgba(23, 32, 38, 0.07) 0px 1px 1px 0px, rgba(23, 32, 38, 0.06) 0px 2px 1px -1px, rgba(23, 32, 38, 0.1) 0px 1px 3px 0px;
+  padding: 2px;
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+
+.navbar-container div .menu .login .icon img {
+  background-size: cover;
+  border-radius: 50%;
+  border: 1px solid #f1f2f4;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar-container div .menu .login .text {
+  text-shadow: 0px 2px 4px rgba(23, 32, 38, 0.2);
+  white-space: nowrap;
+  padding-left: 10px;
+  color: #fff;
+  width: 100px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
