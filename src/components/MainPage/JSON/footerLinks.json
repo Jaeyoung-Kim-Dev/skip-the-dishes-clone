@@ -1,0 +1,34 @@
+[
+  {
+    "name": "About Us",
+    "url": "/about"
+  },
+  {
+    "name": "Restaurant Owners",
+    "url": "https://restaurants.skipthedishes.com/application"
+  },
+  {
+    "name": "FAQ",
+    "url": "/faq"
+  },
+  {
+    "name": "Become A Courier",
+    "url": "https://couriers.skipthedishes.com/application"
+  },
+  {
+    "name": "Gift Cards",
+    "url": "/gift-cards/purchase"
+  },
+  {
+    "name": "Careers",
+    "url": "/jobs"
+  },
+  {
+    "name": "Rewards",
+    "url": "/rewards"
+  },
+  {
+    "name": "Media & Community",
+    "url": "/contact"
+  }
+]

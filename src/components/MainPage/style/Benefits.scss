@@ -1,0 +1,19 @@
+.benefits-container {
+  overflow: hidden;
+  position: relative;
+
+  div {
+    flex-direction: row;
+    // transition: all 0s ease 0s;
+    // direction: ltr;
+    display: flex;
+    // will-change: transform;
+    // transform: translate(-100%);
+  }
+
+  .slide1 {
+    // background-image: url('/images/more-choice_desktop.jpg');
+    width: 510px;
+    height: 500px;
+  }
+}

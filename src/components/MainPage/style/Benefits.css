@@ -1,0 +1,14 @@
+.benefits-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.benefits-container div {
+  flex-direction: row;
+  display: flex;
+}
+
+.benefits-container .slide1 {
+  width: 510px;
+  height: 500px;
+}
