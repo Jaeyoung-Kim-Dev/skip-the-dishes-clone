@@ -4,11 +4,57 @@
 }
 
 .benefits-container div {
-  flex-direction: row;
   display: flex;
 }
 
-.benefits-container .slide1 {
+.benefits-container div .text1 {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits-container div .text1 div {
+  z-index: 2;
+  max-width: 301px;
+  flex-direction: column;
+}
+
+.benefits-container div .text1 div h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 4px 0 rgba(23, 32, 38, 0.2);
+  margin-bottom: 24px;
+}
+
+.benefits-container div .text1 div div {
+  font-family: CoreSans, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.00938em;
+  color: #5e6b77;
+}
+
+.benefits-container div .slide1 {
   width: 510px;
   height: 500px;
+  z-index: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.benefits-container div .slide1 .diagonal {
+  width: 600px;
+  height: 1000px;
+  top: 0;
+  position: absolute;
+  background: #fff;
+  transform: rotate(10deg) translate(-550px, -50px);
 }
