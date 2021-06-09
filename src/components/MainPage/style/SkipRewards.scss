@@ -1,165 +1,122 @@
 .skipRewards-container {
+  overflow: hidden;
   position: relative;
-  width: 100%;
-  height: auto;
 
-  section {
+  div {
     background-color: rgb(255, 234, 212);
-    position: relative;
-    overflow: hidden;
+    display: flex;
 
-    div {
+    .photo {
+      width: 690px;
+      max-width: 690px;
+      // min-width: 690px;
       height: 540px;
-      position: relative;
-      width: 100%;
+      z-index: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      // margin-right: 245px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      .diagonal {
+        width: 200px;
+        height: 1000px;
+        top: 0;
+        position: absolute;
+        z-index: 1;
+        background: rgb(255, 234, 212);
+        transform: rotate(10deg) translate(510px, -250px);
+      }
+    }
+
+    .text {
+      flex-grow: 1;
       display: flex;
-      max-width: 1200px;
-      margin: 0px auto;
+      // justify-content: center;
+      align-items: center;
+      position: relative;
 
       div {
-        max-width: 500px;
-        padding: 0px 16px;
-        justify-content: center;
-        display: flex;
+        max-width: 468px;
         flex-direction: column;
-        position: relative;
-        z-index: 1;
-        margin-left: 55%;
 
-        // display: grid;
-        // grid-auto-columns: minmax(auto, 1fr);
-        // overflow: hidden;
-        // align-items: center;
-        // grid-template-areas: 'col1 col2';
+        .rewards-title {
+          margin: 0px 0px 20px;
+          height: 30px;
+          z-index: 2;
+          align-items: start;
 
-        // @media screen and (max-width: 960px) {
-        //   grid-template-areas: 'col2' 'col1';
-        // }
-
-        .column1 {
-          // grid-area: col1;
-          // width: 100%;
-          // position: relative;
-
-          background-position: unset;
-          height: 540px;
-          position: absolute;
-          left: 0px;
-          top: 0px;
-          background-repeat: no-repeat;
-          max-width: 1010px;
-          width: 80%;
-
-          .photo {
-            background-position: unset;
-            height: 540px;
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            width: 100%;
-            height: 540px;
-            background-repeat: no-repeat;
-            max-width: 1010px;
-            width: 80%;
-
-            @media screen and (max-width: 960px) {
-              height: 245px;
-            }
-
-            div {
-              right: 0px;
-              margin-top: -500px;
-              margin-right: -280px;
-              top: 50%;
-              transform: rotate(16deg);
-              width: 500px;
-              bottom: 100%;
-              position: absolute;
-              height: 1000px;
-              right: -100px;
-              transform: rotate(-4deg);
-              transform-origin: 100% 0px 0px;
-              background-color: rgb(255, 234, 212);
-            }
+          svg {
+            fill: rgb(255, 128, 0);
+            width: inherit;
+            height: inherit;
           }
         }
 
-        .column2 {
-          // grid-area: col2;
-          margin: 0px 0px 20px;
-          height: 30px;
+        .rewards-text {
+          z-index: 2;
+          margin-bottom: 32px;
 
-          .rewards-icon {
-            margin: 0px 0px 20px;
-            height: 30px;
+          span {
+            max-width: 100%;
+            padding: 0px;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            transition: none;
+            line-height: 21px;
+            letter-spacing: 0;
+          }
+        }
 
-            svg {
-              fill: rgb(255, 128, 0);
-              width: inherit;
-              height: inherit;
-            }
+        .learn-more {
+          z-index: 2;
+          width: 167.11px;
+
+          :hover {
+            background-color: rgb(170, 76, 0);
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+              box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+              border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
           }
 
-          .rewards-text {
-            margin-bottom: 32px;
+          a {
+            height: 60px;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: 600;
+            line-height: 1.3;
+            white-space: normal;
+            letter-spacing: 1px;
+            font-size: 0.9375rem;
+            color: rgba(255, 255, 255, 1);
+            background-color: #f36d00;
+            box-shadow: none;
+            min-width: 64px;
+            box-sizing: border-box;
 
-            p {
-              max-width: 100%;
-              padding: 0px;
-              text-align: left;
-              font-size: 16px;
-              font-weight: 500;
-              margin-bottom: 10px;
-              transition: none;
-              line-height: 21px;
-              letter-spacing: 0;
-            }
-          }
+            text-transform: uppercase;
+            border: 0;
+            cursor: pointer;
+            margin: 0;
+            display: inline-flex;
+            outline: 0;
+            position: relative;
+            align-items: center;
+            vertical-align: middle;
+            justify-content: center;
+            text-decoration: none;
 
-          .learn-more {
-            :hover {
-              background-color: rgb(170, 76, 0);
-              transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
-                  0ms,
-                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-                border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-            }
-
-            a {
-              height: 60px;
-              border-radius: 4px;
-              text-align: center;
-              font-weight: 600;
-              line-height: 1.3;
-              white-space: normal;
-              letter-spacing: 1px;
-              padding: 15px 30px 14px;
+            span {
               font-size: 0.9375rem;
               color: rgba(255, 255, 255, 1);
-              background-color: #f36d00;
-              box-shadow: none;
-              min-width: 64px;
-              box-sizing: border-box;
-
               text-transform: uppercase;
-              border: 0;
               cursor: pointer;
-              margin: 0;
-              display: inline-flex;
-              outline: 0;
-              position: relative;
-              align-items: center;
-              vertical-align: middle;
-              justify-content: center;
-              text-decoration: none;
-
-              span {
-                font-size: 0.9375rem;
-                color: rgba(255, 255, 255, 1);
-                text-transform: uppercase;
-                cursor: pointer;
-                pointer-events: auto;
-              }
+              pointer-events: auto;
             }
           }
         }
