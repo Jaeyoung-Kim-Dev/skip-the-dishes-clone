@@ -10,9 +10,7 @@ export const SkipRewards = () => {
           style={{
             backgroundImage: `url('/images/rewards-landingPage-en-1x.png')`,
           }}
-        >
-          <div className='diagonal'></div>
-        </div>
+        ></div>
         <div className='text'>
           <div>
             <div className='rewards-title'>

@@ -48,13 +48,5 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.benefits-container div .slide1 .diagonal {
-  width: 600px;
-  height: 1000px;
-  top: 0;
-  position: absolute;
-  background: #fff;
-  transform: rotate(10deg) translate(-550px, -50px);
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
 }

@@ -51,15 +51,16 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
+      clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
 
-      .diagonal {
-        width: 600px;
-        height: 1000px;
-        top: 0;
-        position: absolute;
-        background: #fff;
-        transform: rotate(15deg) translate(-550px, -50px);
-      }
+      // .diagonal {
+      //   width: 600px;
+      //   height: 1000px;
+      //   top: 0;
+      //   position: absolute;
+      //   background: #fff;
+      //   transform: rotate(15deg) translate(-550px, -50px);
+      // }
     }
   }
 }
