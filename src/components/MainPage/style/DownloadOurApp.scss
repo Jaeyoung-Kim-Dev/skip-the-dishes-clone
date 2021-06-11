@@ -72,7 +72,7 @@
 
         .download-text {
           z-index: 2;
-          margin-bottom: 32px;
+          margin-bottom: 18px;
 
           span {
             font-size: 16px;
@@ -85,16 +85,15 @@
 
         .applink {
           padding: 6px 0px;
-          justify-content: left;
+          justify-content: space-between;
           display: flex;
           flex-direction: row;
           align-items: center;
+          width: 285px;
 
           a img {
-            width: 160px;
-            height: 40px;
-            object-fit: cover;
-            // overflow: hidden;
+            width: 123.2px;
+            height: 39.98px;
           }
         }
       }

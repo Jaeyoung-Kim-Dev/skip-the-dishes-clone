@@ -1,0 +1,23 @@
+[
+  {
+    "id": "couriers",
+    "title": "Drive With Skip",
+    "content": "Earn extra money in your spare time. Set your availability, keep 100% of your delivery fees and tips, and get paid weekly.",
+    "button": "join now",
+    "link": "https://couriers.skipthedishes.com/application"
+  },
+  {
+    "id": "restaurants",
+    "title": "Partner With Skip",
+    "content": "Team up with us to reach more customers. Let us take care of the details, so you can stay focused on making great food.",
+    "button": "learn more",
+    "link": "https://restaurants.skipthedishes.com/application"
+  },
+  {
+    "id": "careers",
+    "title": "Careers At Skip",
+    "content": "Gain experience that matters. Grow with our team of high performers in a fun, challenging, and fast-paced environment.",
+    "button": "apply today",
+    "link": "https://www.skipthedishes.com/jobs"
+  }
+]
