@@ -1,1 +1,44 @@
-/* No CSS */
+.nowserving-container {
+  min-height: 617.45px;
+  background-color: #fff;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.nowserving-container div {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 920px;
+  padding-bottom: 32px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nowserving-container div h4 {
+  max-width: 100%;
+  color: #0c151d;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.nowserving-container div div {
+  margin: 36px 0px;
+  flex: 1 1 0%;
+  display: flex;
+  width: 100%;
+  padding: 0;
+}
+
+.nowserving-container div div svg {
+  fill: #f36d00;
+}
+
+.nowserving-container div div svg g {
+  cursor: pointer;
+}
