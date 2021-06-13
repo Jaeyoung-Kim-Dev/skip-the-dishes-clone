@@ -12,35 +12,33 @@
   width: 100%;
 }
 
-.footer-container .links div {
+.footer-container .links .test {
   max-width: 936px;
   margin: 0px auto !important;
+  padding-top: 100px;
 }
 
-.footer-container .links div div {
-  margin: 84px auto 0px;
-  max-width: none;
+.footer-container .links .test div {
   display: flex;
   flex-direction: row;
-  padding: 16px 0px;
+  margin: 0;
   width: 100%;
 }
 
-.footer-container .links div div .siteLinks {
+.footer-container .links .test div .siteLinks {
   text-align: left;
   flex-flow: row wrap;
   justify-content: left;
   flex: 1 1 auto;
-  display: flex;
 }
 
-.footer-container .links div div .siteLinks div {
+.footer-container .links .test div .siteLinks div {
   padding: 10px 0px;
   text-align: left;
   width: 50%;
 }
 
-.footer-container .links div div .siteLinks div a {
+.footer-container .links .test div .siteLinks div a {
   color: white;
   text-decoration: none;
   font-size: 14px;
@@ -50,7 +48,7 @@
   text-align: left;
 }
 
-.footer-container .links div div .socialLinks {
+.footer-container .links .test div .socialLinks {
   width: auto;
   padding-top: 0px;
   border-top: unset;
@@ -61,7 +59,7 @@
   justify-content: space-between;
 }
 
-.footer-container .links div div .socialLinks .invite {
+.footer-container .links .test div .socialLinks .invite {
   margin-top: 0px;
   padding: 0px;
   align-self: flex-start;
@@ -69,7 +67,7 @@
   color: white;
 }
 
-.footer-container .links div div .socialLinks .invite button {
+.footer-container .links .test div .socialLinks .invite button {
   max-width: 100%;
   min-height: 42px;
   padding: 0;
@@ -99,7 +97,7 @@
   background-color: transparent;
 }
 
-.footer-container .links div div .socialLinks .invite button span {
+.footer-container .links .test div .socialLinks .invite button span {
   white-space: nowrap;
   width: 100%;
   display: inherit;
@@ -107,16 +105,11 @@
   justify-content: inherit;
 }
 
-.footer-container .links div div .socialLinks .invite button span div {
+.footer-container .links .test div .socialLinks .invite button span div {
   padding: 0px 0px 0px 8px;
 }
 
-.footer-container .links div div .socialLinks .invite button span div div {
-  height: 20px;
-  width: 20px;
-}
-
-.footer-container .links div div .socialLinks .invite button span div div svg {
+.footer-container .links .test div .socialLinks .invite button span div svg {
   height: 20px;
   width: 20px;
   pointer-events: none;
@@ -127,28 +120,24 @@
   flex-shrink: 0;
 }
 
-.footer-container .links div div .socialLinks .socialMedia {
+.footer-container .links .test div .socialLinks .socialMedia {
   padding: 0px;
   align-self: flex-end;
   display: flex;
   justify-content: center;
 }
 
-.footer-container .links div div .socialLinks .socialMedia div a {
+.footer-container .links .test div .socialLinks .socialMedia a {
   color: #0d4696;
   text-decoration: none;
   font-size: 14px;
   font-weight: 400;
   cursor: pointer;
   line-height: 21px;
+  margin: 10px;
 }
 
-.footer-container .links div div .socialLinks .socialMedia div a div {
-  height: 24px;
-  width: 24px;
-}
-
-.footer-container .links div div .socialLinks .socialMedia div a div svg {
+.footer-container .links .test div .socialLinks .socialMedia a svg {
   fill: #fff;
   height: 24px;
   width: 24px;
