@@ -4,7 +4,7 @@ import './style/Benefits.scss';
 export const Benefits = () => {
   return (
     <div className='benefits-container'>
-      <div>
+      <div className='benefits-wrapper'>
         <div className='text1'>
           <div>
             <h2>More Choice</h2>
@@ -17,9 +17,7 @@ export const Benefits = () => {
         <div
           className='slide1'
           style={{ backgroundImage: `url('/images/more-choice_desktop.jpg')` }}
-        >
-          <div className='diagonal'></div>
-        </div>
+        ></div>
       </div>
     </div>
   );
