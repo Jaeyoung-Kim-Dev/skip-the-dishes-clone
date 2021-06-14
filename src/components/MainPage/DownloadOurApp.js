@@ -4,10 +4,7 @@ import './style/DownloadOurApp.scss';
 export const DownloadOurApp = () => {
   return (
     <div className='downloadourapp-container'>
-      <div>
-        <div className='photo'>
-          <img src='/images/downloadApp/desktop-en.png' alt='screenshot' />
-        </div>
+      <div className='downloadourapp-wrapper'>
         <div className='leftBackground'></div>
         <div className='text'>
           <div>
@@ -36,6 +33,18 @@ export const DownloadOurApp = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className='photo'>
+        <img
+          className='desktop-en'
+          src='/images/downloadApp/desktop-en.png'
+          alt='screenshot'
+        />
+        <img
+          className='mobile-en'
+          src='/images/downloadApp/mobile-en.png'
+          alt='screenshot'
+        />
       </div>
     </div>
   );

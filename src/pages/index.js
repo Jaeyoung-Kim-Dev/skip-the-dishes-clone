@@ -11,14 +11,14 @@ import { SkipRewards } from '../components/MainPage/SkipRewards';
 export const MainPage = () => {
   return (
     <div>
-      <Hero />
+      {/* <Hero /> */}
       <Benefits />
       <SkipRewards />
       <DownloadOurApp />
-      <Cards />
+      {/* <Cards />
       <NowServing />
       <PopularCuisines />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };

@@ -1,26 +1,25 @@
 .downloadourapp-container {
   overflow: hidden;
   position: relative;
-  height: 564px;
 }
 
-.downloadourapp-container div {
+.downloadourapp-container .downloadourapp-wrapper {
   background-color: #111b22;
-  display: flex;
+  display: grid;
+  grid-template-columns: 55vw auto;
+  grid-template-areas: 'col1 col2';
 }
 
-.downloadourapp-container div .photo {
-  width: 0;
-  height: 530px;
-  padding-top: 95px;
+@media screen and (max-width: 960px) {
+  .downloadourapp-container .downloadourapp-wrapper {
+    grid-template-areas: 'col1' 'col2';
+    grid-template-columns: auto;
+  }
 }
 
-.downloadourapp-container div .photo img {
-  z-index: 3;
-  transform: translateX(13vw);
-}
-
-.downloadourapp-container div .leftBackground {
+.downloadourapp-container .downloadourapp-wrapper .leftBackground {
+  height: 564px;
+  grid-area: col1;
   width: 570px;
   max-width: 690px;
   z-index: 0;
@@ -28,14 +27,21 @@
   top: 0;
   bottom: 0;
   background-color: #0c151d;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
 }
 
-.downloadourapp-container div .text {
-  flex-grow: 1;
+@media screen and (max-width: 960px) {
+  .downloadourapp-container .downloadourapp-wrapper .leftBackground {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    width: auto;
+    max-width: 960px;
+    background-position: center;
+    height: 270px;
+  }
+}
+
+.downloadourapp-container .downloadourapp-wrapper .text {
+  grid-area: col2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,12 +49,20 @@
   color: #fff;
 }
 
-.downloadourapp-container div .text div {
+@media screen and (max-width: 960px) {
+  .downloadourapp-container .downloadourapp-wrapper .text {
+    height: 285px;
+    padding-top: 100px;
+    text-align: center;
+  }
+}
+
+.downloadourapp-container .downloadourapp-wrapper .text div {
   max-width: 275px;
   flex-direction: column;
 }
 
-.downloadourapp-container div .text div .download-title {
+.downloadourapp-container .downloadourapp-wrapper .text div .download-title {
   font-size: 32px;
   font-family: CoreSans, sans-serif;
   font-weight: 500;
@@ -58,12 +72,12 @@
   margin-bottom: 20px;
 }
 
-.downloadourapp-container div .text div .download-text {
+.downloadourapp-container .downloadourapp-wrapper .text div .download-text {
   z-index: 2;
   margin-bottom: 18px;
 }
 
-.downloadourapp-container div .text div .download-text span {
+.downloadourapp-container .downloadourapp-wrapper .text div .download-text span {
   font-size: 16px;
   font-family: CoreSans, sans-serif;
   font-weight: 500;
@@ -71,7 +85,7 @@
   letter-spacing: 0;
 }
 
-.downloadourapp-container div .text div .applink {
+.downloadourapp-container .downloadourapp-wrapper .text div .applink {
   padding: 6px 0px;
   justify-content: space-between;
   display: flex;
@@ -80,7 +94,42 @@
   width: 285px;
 }
 
-.downloadourapp-container div .text div .applink a img {
+.downloadourapp-container .downloadourapp-wrapper .text div .applink a img {
   width: 123.2px;
   height: 39.98px;
+}
+
+.downloadourapp-container .photo {
+  position: absolute;
+}
+
+@media screen and (max-width: 960px) {
+  .downloadourapp-container .photo {
+    left: 50%;
+  }
+}
+
+.downloadourapp-container .photo .desktop-en {
+  height: 530px;
+  z-index: 3;
+  transform: translate(12vw, -470px);
+}
+
+@media screen and (max-width: 960px) {
+  .downloadourapp-container .photo .desktop-en {
+    display: none;
+  }
+}
+
+.downloadourapp-container .photo .mobile-en {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .downloadourapp-container .photo .mobile-en {
+    display: block;
+    width: 230px;
+    z-index: 3;
+    transform: translate(-50%, -600px);
+  }
 }

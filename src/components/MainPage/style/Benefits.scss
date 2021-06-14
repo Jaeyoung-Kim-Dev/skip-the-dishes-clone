@@ -24,9 +24,14 @@
       }
 
       div {
+        width: 301px;
         z-index: 2;
         // max-width: 301px;
         flex-direction: column;
+
+        @media screen and (max-width: 960px) {
+          width: 100%;
+        }
 
         h2 {
           font-weight: 500;
