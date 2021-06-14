@@ -5,7 +5,7 @@ import { Navbar } from './Navbar';
 export const Hero = () => {
   return (
     <div className='hero-container'>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className='centerMenu'>
         <div className='text'>
           <h1>EAT. PLAYOFFS. REPEAT</h1>
@@ -28,7 +28,7 @@ export const Hero = () => {
             </div>
           </div>
           <form>
-            <input placeholder='Enter Your Address'></input>
+            <input placeholder='Enter Your Address' />
           </form>
           <div className='currentLocation'>
             <button>

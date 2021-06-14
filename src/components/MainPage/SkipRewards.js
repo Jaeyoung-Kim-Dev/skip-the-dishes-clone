@@ -4,7 +4,7 @@ import './style/SkipRewards.scss';
 export const SkipRewards = () => {
   return (
     <div className='skipRewards-container'>
-      <div>
+      <div className='skipRewards-wrapper'>
         <div
           className='photo'
           style={{
