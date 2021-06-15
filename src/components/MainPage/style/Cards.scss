@@ -1,14 +1,23 @@
 .cards-container {
-  height: 563px;
   background-color: #f9fafb;
 
-  div {
+  .cards-wrapper {
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: 960px) {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 20px;
+    }
 
     .card {
       margin: 64px 16px;
       text-align: left;
+
+      @media screen and (max-width: 960px) {
+        margin: 20px 0 0 0;
+      }
 
       div {
         flex-direction: column;
@@ -17,6 +26,11 @@
         background-color: #fff;
         overflow: hidden;
         position: relative;
+
+        @media screen and (max-width: 600px) {
+          max-width: 100%;
+          border-radius: 0;
+        }
 
         img {
           border-radius: 8px 8px 0 0;
@@ -27,12 +41,21 @@
           background-position: center bottom;
           position: relative;
           clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+
+          @media screen and (max-width: 600px) {
+            border-radius: 0;
+            height: 180px;
+          }
         }
 
         div {
           padding: 32px;
           text-align: left;
           border-bottom: 1px solid #f1f2f4;
+
+          @media screen and (max-width: 600px) {
+            text-align: center;
+          }
 
           h3 {
             font-size: 20px;

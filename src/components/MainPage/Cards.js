@@ -5,7 +5,7 @@ import cardLists from './JSON/cardLists.json';
 export const Cards = () => {
   return (
     <div className='cards-container'>
-      <div>
+      <div className='cards-wrapper'>
         {cardLists.map((card) => (
           <div key={card.id} className='card'>
             <div>
