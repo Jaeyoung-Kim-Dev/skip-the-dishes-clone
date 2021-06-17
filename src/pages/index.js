@@ -16,9 +16,9 @@ export const MainPage = () => {
       <SkipRewards />
       <DownloadOurApp />
       <Cards />
-      <NowServing />
+      {/* <NowServing />
       <PopularCuisines />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };

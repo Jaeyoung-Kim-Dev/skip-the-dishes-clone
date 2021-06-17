@@ -11,7 +11,7 @@
       padding-bottom: 20px;
     }
 
-    .card {
+    .card-wrapper {
       margin: 64px 16px;
       text-align: left;
 
@@ -19,7 +19,7 @@
         margin: 20px 0 0 0;
       }
 
-      div {
+      .card {
         flex-direction: column;
         max-width: 314px;
         border-radius: 8px;
@@ -32,23 +32,36 @@
           border-radius: 0;
         }
 
-        img {
+        .image-wrapper {
           border-radius: 8px 8px 0 0;
           width: 100%;
           height: 180px;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center bottom;
           position: relative;
           clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
 
           @media screen and (max-width: 600px) {
             border-radius: 0;
-            height: 180px;
+          }
+
+          img {
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+
+            @media screen and (max-width: 600px) {
+              // width: 100;
+            }
           }
         }
 
-        div {
+        .restaurants {
+          @media screen and (max-width: 960px) {
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
+          }
+        }
+
+        .card-text {
           padding: 32px;
           text-align: left;
           border-bottom: 1px solid #f1f2f4;
