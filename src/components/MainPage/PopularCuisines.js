@@ -9,7 +9,7 @@ export const PopularCuisines = () => {
         <h6>Popular Cuisines</h6>
         <ul>
           {cuisines.map((cuisine) => (
-            <li>
+            <li key={cuisine.name}>
               <a href={cuisine.link}>
                 <div
                   style={{
@@ -17,7 +17,6 @@ export const PopularCuisines = () => {
                   }}
                 >
                   <p>{cuisine.name}</p>
-                  <div></div>
                 </div>
               </a>
             </li>
