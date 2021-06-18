@@ -1,18 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './style/Navbar.scss';
+import { useWindowSize } from '../../hooks/useWindowSize';
 
 export const Navbar = () => {
-  const [isMobile, setIsMobile] = useState();
   const [logoImage, setlogoImage] = useState();
-
-  const checkScreenSize = () =>
-    window.innerWidth > 960 ? setIsMobile(false) : setIsMobile(true);
-
-  useEffect(() => {
-    checkScreenSize();
-    window.addEventListener('resize', checkScreenSize);
-    return () => window.removeEventListener('resize', checkScreenSize);
-  }, []);
+  const isMobile = useWindowSize();
 
   useEffect(() => {
     isMobile
@@ -95,7 +87,6 @@ export const Navbar = () => {
           </div>
         )}
         {!isMobile && <span className='divider'></span>}
-
         <button className='login'>
           <img src='/images/account-default@1x.png' alt='user' />
           {!isMobile && <div className='text'>Log In</div>}

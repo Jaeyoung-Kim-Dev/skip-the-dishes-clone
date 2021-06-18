@@ -6,10 +6,9 @@
   height: auto;
 }
 
-.nowserving-container div {
-  margin: 0px auto;
-  width: 100%;
+.nowserving-container .nowserving-wrapper {
   max-width: 920px;
+  margin: 0px auto;
   padding-bottom: 32px;
   padding-top: 60px;
   display: flex;
@@ -17,7 +16,7 @@
   align-items: center;
 }
 
-.nowserving-container div h4 {
+.nowserving-container .nowserving-wrapper h4 {
   max-width: 100%;
   color: #0c151d;
   font-size: 32px;
@@ -27,7 +26,7 @@
   margin: 0;
 }
 
-.nowserving-container div div {
+.nowserving-container .nowserving-wrapper .desktop-screen {
   margin: 36px 0px;
   flex: 1 1 0%;
   display: flex;
@@ -35,10 +34,25 @@
   padding: 0;
 }
 
-.nowserving-container div div svg {
+.nowserving-container .nowserving-wrapper .desktop-screen svg {
   fill: #f36d00;
 }
 
-.nowserving-container div div svg g {
+.nowserving-container .nowserving-wrapper .desktop-screen svg g {
   cursor: pointer;
+}
+
+.nowserving-container .nowserving-wrapper .mobile-screen div {
+  width: 100vw;
+  box-shadow: #f1f2f4 0px 1px 0px 0px inset;
+  cursor: pointer;
+}
+
+.nowserving-container .nowserving-wrapper .mobile-screen div p {
+  padding: 18px 16px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.00938em;
+  margin: 0;
+  color: #0c151d;
 }

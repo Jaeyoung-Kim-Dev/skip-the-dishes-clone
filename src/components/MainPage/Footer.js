@@ -9,13 +9,11 @@ export const Footer = () => {
         <div className='top-links'>
           <div>
             <div className='siteLinks'>
-              {React.children.toArray(
-                footerLinks.map((link) => (
-                  <div>
-                    <a href={link.url}>{link.name}</a>
-                  </div>
-                ))
-              )}
+              {footerLinks.map((link) => (
+                <div key={link.name}>
+                  <a href={link.url}>{link.name}</a>
+                </div>
+              ))}
             </div>
             <div className='socialLinks'>
               <div className='invite'>
