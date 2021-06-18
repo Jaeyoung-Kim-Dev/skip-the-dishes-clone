@@ -8,6 +8,10 @@
   width: 100%;
 }
 
+.navbar-container a {
+  margin-left: 20px;
+}
+
 .navbar-container a svg {
   filter: drop-shadow(rgba(23, 32, 38, 0.2) 0px 2px 4px);
 }
