@@ -15,7 +15,13 @@
 }
 
 .navbar-container a {
-  margin-left: 20px;
+  margin-left: 45px;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar-container a {
+    margin-left: 15px;
+  }
 }
 
 .navbar-container a svg {
@@ -97,7 +103,9 @@
   align-items: center;
 }
 
-.navbar-container .menu .login .icon {
+.navbar-container .menu .login img {
+  background-size: cover;
+  border: 1px solid #f1f2f4;
   background: white none repeat scroll 0% 0%;
   border-radius: 50%;
   box-shadow: rgba(23, 32, 38, 0.07) 0px 1px 1px 0px, rgba(23, 32, 38, 0.06) 0px 2px 1px -1px, rgba(23, 32, 38, 0.1) 0px 1px 3px 0px;
@@ -108,24 +116,16 @@
 }
 
 @media screen and (max-width: 960px) {
-  .navbar-container .menu .login .icon {
+  .navbar-container .menu .login img {
     margin-right: 20px;
   }
-}
-
-.navbar-container .menu .login .icon img {
-  background-size: cover;
-  border-radius: 50%;
-  border: 1px solid #f1f2f4;
-  height: 100%;
-  width: 100%;
 }
 
 .navbar-container .menu .login .text {
   text-shadow: 0px 2px 4px rgba(23, 32, 38, 0.2);
   white-space: nowrap;
   color: #fff;
-  margin: 0 10px;
+  margin: 0 25px 0 10px;
   font-size: 15px;
   text-transform: uppercase;
 }

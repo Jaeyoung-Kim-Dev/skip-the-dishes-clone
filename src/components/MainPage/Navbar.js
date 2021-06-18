@@ -97,9 +97,7 @@ export const Navbar = () => {
         {!isMobile && <span className='divider'></span>}
 
         <button className='login'>
-          <div className='icon'>
-            <img src='/images/account-default@1x.png' alt='user' />
-          </div>
+          <img src='/images/account-default@1x.png' alt='user' />
           {!isMobile && <div className='text'>Log In</div>}
         </button>
       </div>

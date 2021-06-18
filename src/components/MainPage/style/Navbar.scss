@@ -13,7 +13,12 @@
   }
 
   a {
-    margin-left: 20px;
+    margin-left: 45px;
+
+    @media screen and (max-width: 960px) {
+      margin-left: 15px;
+    }
+
     svg {
       filter: drop-shadow(rgba(23, 32, 38, 0.2) 0px 2px 4px);
     }
@@ -89,7 +94,9 @@
       cursor: pointer;
       align-items: center;
 
-      .icon {
+      img {
+        background-size: cover;
+        border: 1px solid rgb(241, 242, 244);
         background: rgb(255, 255, 255) none repeat scroll 0% 0%;
         border-radius: 50%;
         box-shadow: rgba(23, 32, 38, 0.07) 0px 1px 1px 0px,
@@ -103,14 +110,6 @@
         @media screen and (max-width: 960px) {
           margin-right: 20px;
         }
-
-        img {
-          background-size: cover;
-          border-radius: 50%;
-          border: 1px solid rgb(241, 242, 244);
-          height: 100%;
-          width: 100%;
-        }
       }
 
       .text {
@@ -118,7 +117,7 @@
         white-space: nowrap;
         color: #fff;
         // width: 100px;
-        margin: 0 10px;
+        margin: 0 25px 0 10px;
         font-size: 15px;
         text-transform: uppercase;
       }
