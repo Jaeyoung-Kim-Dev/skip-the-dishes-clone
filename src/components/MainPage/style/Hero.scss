@@ -21,6 +21,7 @@
     margin: auto;
     width: 100%;
     max-width: 830px;
+    transform: translateY(-70px);
 
     @media screen and (max-width: 960px) {
       width: 90vw;
