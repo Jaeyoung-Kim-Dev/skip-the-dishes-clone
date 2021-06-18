@@ -31,7 +31,7 @@ export const Navbar = () => {
               aria-hidden='true'
               size='25'
               theme='[object Object]'
-              borderWeight='2'
+              borderweight='2'
               padding='8'
             >
               <g transform='translate(2.000000, 2.000000)'>
@@ -54,7 +54,7 @@ export const Navbar = () => {
             aria-hidden='true'
             size='25'
             theme='[object Object]'
-            borderWeight='2'
+            borderweight='2'
             padding='8'
           >
             <circle cx='256' cy='256' fill='#eee' r='256'></circle>
