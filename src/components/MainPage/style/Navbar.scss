@@ -3,15 +3,14 @@
   background-color: transparent;
   height: 90px;
   display: flex;
-  margin: 0 15px 0 45px;
+  // padding: 0 15px 0 45px;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 
-  .logo {
-    a {
-      svg {
-        filter: drop-shadow(rgba(23, 32, 38, 0.2) 0px 2px 4px);
-      }
+  a {
+    svg {
+      filter: drop-shadow(rgba(23, 32, 38, 0.2) 0px 2px 4px);
     }
   }
 
