@@ -5,7 +5,7 @@ import cuisines from './JSON/cuisines.json';
 export const PopularCuisines = () => {
   return (
     <div className='popularcuisines-container'>
-      <div>
+      <div className='popularcuisines-wrapper'>
         <h6>Popular Cuisines</h6>
         <ul>
           {cuisines.map((cuisine) => (

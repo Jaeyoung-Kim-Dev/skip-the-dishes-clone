@@ -2,7 +2,7 @@
   background-color: #f9fafb;
 }
 
-.popularcuisines-container div {
+.popularcuisines-container .popularcuisines-wrapper {
   padding: 64px 0px;
   position: relative;
   margin: 0px auto;
@@ -10,8 +10,14 @@
   max-width: 920px;
 }
 
-.popularcuisines-container div h6 {
-  padding: 32px 0px 25px;
+@media screen and (max-width: 960px) {
+  .popularcuisines-container .popularcuisines-wrapper {
+    padding: 0 0 64px;
+  }
+}
+
+.popularcuisines-container .popularcuisines-wrapper h6 {
+  padding: 32px 5px 25px;
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -23,63 +29,79 @@
   margin: 0;
 }
 
-.popularcuisines-container div ul {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  border-radius: 4px;
-  margin: 0px;
-  position: relative;
-  list-style: outside none none;
-  transition: transform 500ms cubic-bezier(1, 0, 0, 1) 0s;
-  display: flex;
-  padding-left: 0;
-}
-
 @media screen and (max-width: 960px) {
-  .popularcuisines-container div ul {
-    max-height: 132px;
+  .popularcuisines-container .popularcuisines-wrapper h6 {
+    font-size: 20px;
+    padding: 32px 15px 15px;
   }
 }
 
-.popularcuisines-container div ul li {
-  margin: 0px 2px;
-  padding: 2px 0px 0px 2px;
-  cursor: pointer;
+.popularcuisines-container .popularcuisines-wrapper ul {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  margin: 0;
+  position: relative;
   list-style: outside none none;
-  width: 224px;
+  display: flex;
+  padding: 0px 0px 5px;
 }
 
-.popularcuisines-container div ul li a div {
+@media screen and (max-width: 960px) {
+  .popularcuisines-container .popularcuisines-wrapper ul {
+    max-height: 132px;
+    overflow-x: scroll;
+    padding: 0px 12px 8px;
+  }
+}
+
+.popularcuisines-container .popularcuisines-wrapper ul li {
+  margin: 0px 4px;
+  padding: 2px 0px;
+  cursor: pointer;
+  list-style: outside none none;
+}
+
+.popularcuisines-container .popularcuisines-wrapper ul li a div {
   border-radius: 4px;
   max-height: 142px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
+  padding: 64px 0px;
+  width: 224px;
 }
 
-.popularcuisines-container div ul li a div::after {
+.popularcuisines-container .popularcuisines-wrapper ul li a div::after {
   content: '';
+  border-radius: 4px;
   background: rgba(0, 0, 0, 0) linear-gradient(rgba(255, 255, 255, 0) 15%, rgba(0, 0, 0, 0.6) 100%) repeat scroll 0% 0%;
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
 }
 
 @media screen and (max-width: 960px) {
-  .popularcuisines-container div ul li a div {
-    width: 109px;
-    max-height: 132px;
+  .popularcuisines-container .popularcuisines-wrapper ul li a div::after {
+    border-radius: 8px;
   }
 }
 
-.popularcuisines-container div ul li a div p {
+@media screen and (max-width: 960px) {
+  .popularcuisines-container .popularcuisines-wrapper ul li a div {
+    width: 109px;
+    max-height: 132px;
+    border-radius: 8px;
+  }
+}
+
+.popularcuisines-container .popularcuisines-wrapper ul li a div p {
   left: 16px;
   font-size: 16px;
   line-height: 19px;
   max-height: 38px;
-  width: 180px;
   position: absolute;
   bottom: 12px;
   color: white;
@@ -87,4 +109,11 @@
   margin: 0px;
   text-align: left;
   overflow: hidden;
+  z-index: 1;
+}
+
+@media screen and (max-width: 960px) {
+  .popularcuisines-container .popularcuisines-wrapper ul li a div p {
+    font-size: 14px;
+  }
 }
