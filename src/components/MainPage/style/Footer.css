@@ -81,13 +81,13 @@
   background-color: transparent;
 }
 
-.footer-container .top-wrapper .social-links button span {
+.footer-container .top-wrapper .social-links button div {
   color: white;
   display: inline-flex;
   align-items: center;
 }
 
-.footer-container .top-wrapper .social-links button span svg {
+.footer-container .top-wrapper .social-links button div svg {
   height: 20px;
   width: 20px;
   pointer-events: none;

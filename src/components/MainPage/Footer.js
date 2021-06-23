@@ -15,7 +15,7 @@ export const Footer = () => {
         </div>
         <div className='social-links'>
           <button>
-            <span>
+            <div>
               Invite Friends, Get $5
               <svg
                 focusable='false'
@@ -28,7 +28,7 @@ export const Footer = () => {
               >
                 <path d='M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z'></path>
               </svg>
-            </span>
+            </div>
           </button>
           <div className='social-media'>
             <a
