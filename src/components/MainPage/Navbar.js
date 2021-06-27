@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './style/Navbar.scss';
 import { useWindowSize } from '../../hooks/useWindowSize';
+import { Login } from '../Login/Login';
 
 export const Navbar = () => {
   const [logoImage, setlogoImage] = useState();
   const isMobile = useWindowSize();
+  const [modalIsOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     isMobile
@@ -37,6 +39,11 @@ export const Navbar = () => {
           </svg>
         );
   }, [isMobile]);
+
+  function openModal() {
+    setIsOpen(true);
+    document.body.style.overflow = 'hidden'; // prevent background scrolling when modal open
+  }
 
   return (
     <div className='navbar-container'>
@@ -87,11 +94,12 @@ export const Navbar = () => {
           </div>
         )}
         {!isMobile && <span className='divider'></span>}
-        <button className='login'>
+        <button className='login' onClick={openModal}>
           <img src='/images/account-default@1x.png' alt='user' />
           {!isMobile && <div className='text'>Log In</div>}
         </button>
       </div>
+      <Login modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />
     </div>
   );
 };

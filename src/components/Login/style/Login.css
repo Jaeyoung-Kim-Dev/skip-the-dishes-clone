@@ -1,0 +1,14 @@
+.login-title {
+  display: flex;
+  justify-content: center;
+}
+
+.login-title button {
+  border: none;
+  background: none;
+}
+
+.login-title h2 {
+  width: 100%;
+  padding: 0 60px;
+}
