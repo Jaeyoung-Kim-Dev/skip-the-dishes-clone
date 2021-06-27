@@ -1,14 +1,105 @@
 .login-title {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .login-title button {
   border: none;
+  height: 100%;
   background: none;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
 }
 
 .login-title h2 {
-  width: 100%;
-  padding: 0 60px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0;
+}
+
+.login-wrapper {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  padding: 15px;
+  align-items: center;
+}
+
+.login-wrapper .social-link {
+  display: flex;
+  font-size: 1rem;
+  padding: 10px;
+  background: #f1f2f4;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-wrapper .social-link svg {
+  height: 24px;
+  width: 24px;
+  padding: 7px;
+  fill: black;
+}
+
+.login-wrapper .social-link div {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.3;
+  white-space: normal;
+  letter-spacing: 1px;
+  display: flex;
+  align-self: center;
+  text-transform: uppercase;
+}
+
+.login-wrapper .or {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0;
+  color: #5e6b77;
+}
+
+.login-wrapper .email-login {
+  display: flex;
+  font-size: 1rem;
+  padding: 15px;
+  background: #f1f2f4;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #125fca;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.3;
+  white-space: normal;
+  letter-spacing: 1px;
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  color: #5e6b77;
+  font-weight: 250;
+  line-height: 21px;
+}
+
+.signup .signup-link {
+  margin-left: 10px;
+  color: #0d4696;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
 }
