@@ -1,32 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style/Login.scss';
 import { Link } from 'react-router-dom';
 import { GrClose } from 'react-icons/gr';
 import Modal from 'react-modal';
-
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    display: 'flex',
-    flexDirection: 'column',
-    width: '420px',
-    height: '460px',
-    background: '#fff',
-    borderRadius: '10px',
-  },
-  overlay: { zIndex: 1000 },
-};
+import { LoginForm } from './LoginForm';
+import customStyles from './style/ModalStyle';
 
 Modal.setAppElement('#root');
 
 export const Login = (props) => {
   const { modalIsOpen, setIsOpen } = props;
+  const [emailLogin, setEmailLogin] = useState(false);
 
   function closeModal() {
     setIsOpen(false);
     document.body.style.overflow = 'unset'; // allow scrolling once modal close
+    setEmailLogin(false);
   }
 
   return (
@@ -39,7 +28,7 @@ export const Login = (props) => {
       contentLabel='Login'
     >
       <div className='login-title'>
-        <button>
+        <button onClick={closeModal}>
           <GrClose />
         </button>
         <h2>Log In To SkipTheDishes</h2>
@@ -91,7 +80,13 @@ export const Login = (props) => {
           <div>Continue with Apple</div>
         </div>
         <div class='or'>OR</div>
-        <div className='email-login'>Log In With Email</div>
+        {!emailLogin ? (
+          <div className='email-login' onClick={(e) => setEmailLogin(true)}>
+            Log In With Email
+          </div>
+        ) : (
+          <LoginForm />
+        )}
       </div>
       <div className='signup'>
         Need an account? <Link className='signup-link'>Sign up</Link>

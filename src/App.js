@@ -13,6 +13,7 @@ function App() {
       <Router>
         <Route path='/' component={MainPage} exact />
         {/* <Route path='/user/account/create' component={SignupPage} exact /> */}
+        {/* <Route path='/user/account/reset-password' component={ResetPasswordPage} exact /> */}
         {/* <Route component={NotFoundPage} /> */}
       </Router>
     </div>
