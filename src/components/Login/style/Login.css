@@ -1,10 +1,38 @@
-.login-title {
+.login-background {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7) !important;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-background .login-container {
+  width: 430px;
+  background-color: #fff;
+  border-radius: 8px;
+  bottom: 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0px -2px 4px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  outline: none;
+  padding: 15px;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.login-background .login-container .login-title {
   display: flex;
   justify-content: center;
   position: relative;
 }
 
-.login-title button {
+.login-background .login-container .login-title button {
   border: none;
   height: 100%;
   background: none;
@@ -14,14 +42,14 @@
   cursor: pointer;
 }
 
-.login-title h2 {
+.login-background .login-container .login-title h2 {
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
   letter-spacing: 0;
 }
 
-.login-wrapper {
+.login-background .login-container .login-wrapper {
   display: grid;
   grid-template-rows: 1fr;
   grid-gap: 10px;
@@ -29,7 +57,7 @@
   align-items: center;
 }
 
-.login-wrapper .social-link {
+.login-background .login-container .login-wrapper .social-link {
   display: flex;
   font-size: 1rem;
   background: #f1f2f4;
@@ -39,14 +67,14 @@
   border-radius: 5px;
 }
 
-.login-wrapper .social-link svg {
+.login-background .login-container .login-wrapper .social-link svg {
   height: 24px;
   width: 24px;
   padding: 7px;
   fill: black;
 }
 
-.login-wrapper .social-link div {
+.login-background .login-container .login-wrapper .social-link div {
   font-size: 15px;
   text-align: center;
   font-weight: 600;
@@ -60,7 +88,7 @@
   align-items: center;
 }
 
-.login-wrapper .or {
+.login-background .login-container .login-wrapper .or {
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -71,7 +99,7 @@
   color: #5e6b77;
 }
 
-.login-wrapper .email-login {
+.login-background .login-container .login-wrapper .email-login {
   display: flex;
   font-size: 1rem;
   padding: 15px;
@@ -88,16 +116,16 @@
   letter-spacing: 1px;
 }
 
-.signup {
+.login-background .login-container .signup {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin: 40px 0 10px;
   color: #5e6b77;
   font-weight: 250;
   line-height: 21px;
 }
 
-.signup .signup-link {
+.login-background .login-container .signup .signup-link {
   margin-left: 10px;
   color: #0d4696;
   text-decoration: none;

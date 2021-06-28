@@ -85,6 +85,7 @@ form {
       color: rgb(13, 70, 150);
       text-decoration: none;
       cursor: pointer;
+      margin-left: 0;
     }
   }
 
@@ -119,6 +120,6 @@ form {
     font-weight: 400;
     cursor: pointer;
     line-height: 21px;
-    margin-top: 20px;
+    margin: 20px 0 0 0;
   }
 }

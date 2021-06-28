@@ -1,9 +1,9 @@
 import './App.css';
 import {
   BrowserRouter as Router,
-  Switch,
+  // Switch,
   Route,
-  Redirect,
+  // Redirect,
 } from 'react-router-dom';
 import { MainPage } from './pages/index';
 

@@ -75,6 +75,7 @@ form .reCAPTCHA a {
   color: #0d4696;
   text-decoration: none;
   cursor: pointer;
+  margin-left: 0;
 }
 
 form .email-login-btn {
@@ -108,5 +109,5 @@ form .forgot-password {
   font-weight: 400;
   cursor: pointer;
   line-height: 21px;
-  margin-top: 20px;
+  margin: 20px 0 0 0;
 }

@@ -6,7 +6,7 @@ import { Login } from '../Login/Login';
 export const Navbar = () => {
   const [logoImage, setlogoImage] = useState();
   const isMobile = useWindowSize();
-  const [modalIsOpen, setIsOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     isMobile
@@ -41,7 +41,7 @@ export const Navbar = () => {
   }, [isMobile]);
 
   function openModal() {
-    setIsOpen(true);
+    setShowModal(true);
     document.body.style.overflow = 'hidden'; // prevent background scrolling when modal open
   }
 
@@ -99,7 +99,11 @@ export const Navbar = () => {
           {!isMobile && <div className='text'>Log In</div>}
         </button>
       </div>
-      <Login modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />
+      {showModal ? (
+        <Login showModal={showModal} setShowModal={setShowModal} />
+      ) : (
+        ''
+      )}
     </div>
   );
 };
