@@ -22,10 +22,10 @@
 }
 
 @keyframes sidebar-load {
-  0% {
+  from {
     transform: translateX(100%);
   }
-  100% {
+  to {
     transform: translateX(0%);
   }
 }
@@ -40,7 +40,6 @@
   display: flex;
   align-items: center;
   padding-left: 20px;
-  transform: translateY(8px);
 }
 
 .sidebar-background .sidebar-container div {

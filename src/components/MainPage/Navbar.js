@@ -103,7 +103,11 @@ export const Navbar = () => {
       </div>
       {showModal && <Login showModal={showModal} setShowModal={setShowModal} />}
       {showSidebar && (
-        <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
+        <Sidebar
+          showSidebar={showSidebar}
+          setShowSidebar={setShowSidebar}
+          setShowModal={setShowModal}
+        />
       )}
     </div>
   );

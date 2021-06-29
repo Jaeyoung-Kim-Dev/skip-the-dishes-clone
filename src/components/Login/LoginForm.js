@@ -36,7 +36,6 @@ export const LoginForm = () => {
           rel='noopener noreferrer'
           tabIndex='-1'
           target='_blank'
-          class='styles__Link-alu4q8-0 kXeXlF'
         >
           Privacy Policy
         </a>{' '}
@@ -47,7 +46,6 @@ export const LoginForm = () => {
           rel='noopener noreferrer'
           tabIndex='-1'
           target='_blank'
-          class='styles__Link-alu4q8-0 kXeXlF'
         >
           Terms of Service
         </a>{' '}

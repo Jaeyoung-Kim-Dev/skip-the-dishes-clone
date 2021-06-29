@@ -9,6 +9,12 @@
   align-items: center;
 }
 
+@media screen and (max-width: 960px) {
+  .login-background {
+    align-items: flex-end;
+  }
+}
+
 .login-background .login-container {
   width: 430px;
   background-color: #fff;
@@ -26,10 +32,24 @@
   z-index: 10;
 }
 
+@media screen and (max-width: 960px) {
+  .login-background .login-container {
+    width: 100%;
+    max-height: 710px;
+    overflow-y: auto;
+  }
+}
+
 .login-background .login-container .login-title {
   display: flex;
   justify-content: center;
   position: relative;
+}
+
+@media screen and (max-width: 960px) {
+  .login-background .login-container .login-title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
 }
 
 .login-background .login-container .login-title button {
@@ -47,6 +67,12 @@
   font-weight: 500;
   line-height: 28px;
   letter-spacing: 0;
+}
+
+@media screen and (max-width: 960px) {
+  .login-background .login-container .login-title h2 {
+    font-size: 16px;
+  }
 }
 
 .login-background .login-container .login-wrapper {
