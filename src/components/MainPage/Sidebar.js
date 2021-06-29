@@ -37,9 +37,7 @@ export const Sidebar = (props) => {
       onClick={clickBackgroundToClose}
     >
       {/* <div className='sidebar-container'> */}
-      <div
-        className={`sidebar-container ${showSidebar && 'sidebar-animation'}`}
-      >
+      <div className={'sidebar-container'}>
         <h2>Welcome!</h2>
         <div>
           <svg>

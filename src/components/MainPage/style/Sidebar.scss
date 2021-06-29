@@ -18,12 +18,16 @@
     box-shadow: rgba(0, 0, 0, 0.2) -2px 0px 4px 0px;
     background-color: #fff;
     align-items: center;
-    transform: translateX(80%);
-    transition: all 0.3s ease;
+    animation: sidebar-load 0.3s ease;
 
-    // &:hover {
-    //   transform: translateX(0%);
-    // }
+    @keyframes sidebar-load {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
 
     h2 {
       font-size: 20px;
@@ -62,8 +66,4 @@
       }
     }
   }
-}
-
-.sidebar-animation:hover {
-  transform: translateX(0%);
 }
