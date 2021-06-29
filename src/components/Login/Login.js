@@ -7,25 +7,25 @@ import { LoginForm } from './LoginForm';
 export const Login = (props) => {
   const { showModal, setShowModal } = props;
   const [emailLogin, setEmailLogin] = useState(false);
-  const modalRef = useRef();
+  const loginModalRef = useRef();
 
-  const closeModal = useCallback(() => {
+  const closeLoginModal = useCallback(() => {
     setShowModal(false);
     document.body.style.overflow = 'unset'; // allow scrolling once modal close
     setEmailLogin(false);
   }, [setShowModal, setEmailLogin]);
 
   const clickBackgroundToClose = (e) => {
-    if (modalRef.current === e.target) {
-      closeModal();
+    if (loginModalRef.current === e.target) {
+      closeLoginModal();
     }
   };
 
   const keyPress = useCallback(
     (e) => {
-      if (e.key === 'Escape' && showModal) closeModal();
+      if (e.key === 'Escape' && showModal) closeLoginModal();
     },
-    [showModal, closeModal]
+    [showModal, closeLoginModal]
   );
 
   useEffect(() => {
@@ -36,12 +36,12 @@ export const Login = (props) => {
   return (
     <div
       className='login-background'
-      ref={modalRef}
+      ref={loginModalRef}
       onClick={clickBackgroundToClose}
     >
       <div className='login-container'>
         <div className='login-title'>
-          <button onClick={closeModal}>
+          <button onClick={closeLoginModal}>
             <GrClose />
           </button>
           <h2>Log In To SkipTheDishes</h2>

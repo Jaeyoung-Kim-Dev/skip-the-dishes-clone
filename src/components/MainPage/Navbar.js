@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import './style/Navbar.scss';
 import { useWindowSize } from '../../hooks/useWindowSize';
 import { Login } from '../Login/Login';
+import { Sidebar } from './Sidebar';
 
 export const Navbar = () => {
   const [logoImage, setlogoImage] = useState();
   const isMobile = useWindowSize();
   const [showModal, setShowModal] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);
 
   useEffect(() => {
     isMobile
@@ -41,7 +43,7 @@ export const Navbar = () => {
   }, [isMobile]);
 
   function openModal() {
-    setShowModal(true);
+    isMobile ? setShowSidebar(true) : setShowModal(true);
     document.body.style.overflow = 'hidden'; // prevent background scrolling when modal open
   }
 
@@ -99,10 +101,9 @@ export const Navbar = () => {
           {!isMobile && <div className='text'>Log In</div>}
         </button>
       </div>
-      {showModal ? (
-        <Login showModal={showModal} setShowModal={setShowModal} />
-      ) : (
-        ''
+      {showModal && <Login showModal={showModal} setShowModal={setShowModal} />}
+      {showSidebar && (
+        <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       )}
     </div>
   );
