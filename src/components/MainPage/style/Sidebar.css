@@ -5,7 +5,7 @@
   background: rgba(255, 255, 255, 0.7) !important;
   position: fixed;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .sidebar-background .sidebar-container {

@@ -1,8 +1,10 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useEffect, useRef, useCallback } from 'react';
+// import { Login } from '../Login/Login';
 import './style/Sidebar.scss';
 
 export const Sidebar = (props) => {
   const { showSidebar, setShowSidebar } = props;
+  // const [showModal, setShowModal] = useState(false);
   // const [emailLogin, setEmailLogin] = useState(false);
   const sidebarModalRef = useRef();
 
