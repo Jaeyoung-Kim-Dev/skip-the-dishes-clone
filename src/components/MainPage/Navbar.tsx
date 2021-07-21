@@ -5,7 +5,7 @@ import { Login } from '../Login/Login';
 import { Sidebar } from './Sidebar';
 
 export const Navbar = () => {
-  const [logoImage, setlogoImage] = useState();
+  const [logoImage, setlogoImage] = useState<React.SVGProps<SVGSVGElement>>();
   const isMobile = useWindowSize();
   const [showModal, setShowModal] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
@@ -57,10 +57,6 @@ export const Navbar = () => {
             viewBox='0 0 24 24'
             fill='white'
             aria-hidden='true'
-            size='25'
-            theme='[object Object]'
-            borderweight='2'
-            padding='8'
           >
             <g transform='translate(2.000000, 2.000000)'>
               <path
@@ -82,10 +78,6 @@ export const Navbar = () => {
               viewBox='0 0 512 512'
               color='grey'
               aria-hidden='true'
-              size='25'
-              theme='[object Object]'
-              borderweight='2'
-              padding='8'
             >
               <circle cx='256' cy='256' fill='#eee' r='256'></circle>
               <path

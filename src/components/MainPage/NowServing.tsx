@@ -35,7 +35,6 @@ export const NowServing = () => {
                 aria-label='Alberta'
                 aria-selected='false'
                 role='tab'
-                tabIndex='0'
                 className='styles__Group-i6vatj-1 WPjxJ'
               >
                 <g id='AB' transform='translate(133.000000, 95.000000)'>
@@ -53,7 +52,6 @@ export const NowServing = () => {
                 aria-label='British Columbia'
                 aria-selected='false'
                 role='tab'
-                tabIndex='0'
                 className='styles__Group-i6vatj-1 WPjxJ'
               >
                 <g id='BC' transform='translate(0.000000, 53.000000)'>
@@ -78,7 +76,6 @@ export const NowServing = () => {
                 aria-label='New Brunswick'
                 aria-selected='false'
                 role='tab'
-                tabIndex='0'
                 className='styles__Group-i6vatj-1 WPjxJ'
               >
                 <g id='NB' transform='translate(807.000000, 253.000000)'>
@@ -96,7 +93,6 @@ export const NowServing = () => {
                 aria-label='Nova Scotia'
                 aria-selected='false'
                 role='tab'
-                tabIndex='0'
                 className='styles__Group-i6vatj-1 WPjxJ'
               >
                 <g id='NS' transform='translate(859.000000, 242.000000)'>
@@ -121,7 +117,6 @@ export const NowServing = () => {
                 aria-label='Ontario'
                 aria-selected='false'
                 role='tab'
-                tabIndex='0'
                 className='styles__Group-i6vatj-1 WPjxJ'
               >
                 <g id='ON' transform='translate(445.554121, 170.830189)'>
@@ -139,7 +134,6 @@ export const NowServing = () => {
                 aria-label='Prince Edward Island'
                 aria-selected='false'
                 role='tab'
-                tabIndex='0'
                 className='styles__Group-i6vatj-1 WPjxJ'
               >
                 <g id='PE' transform='translate(866.000000, 263.000000)'>
@@ -157,7 +151,6 @@ export const NowServing = () => {
                 aria-label='Saskatchewan'
                 aria-selected='false'
                 role='tab'
-                tabIndex='0'
                 className='styles__Group-i6vatj-1 WPjxJ'
               >
                 <g id='SK' transform='translate(248.000000, 119.000000)'>
@@ -175,7 +168,6 @@ export const NowServing = () => {
                 aria-label='Manitoba'
                 aria-selected='false'
                 role='tab'
-                tabIndex='0'
                 className='styles__Group-i6vatj-1 WPjxJ'
               >
                 <g id='MB' transform='translate(353.000000, 113.000000)'>
@@ -193,7 +185,6 @@ export const NowServing = () => {
                 aria-label='Quebec'
                 aria-selected='false'
                 role='tab'
-                tabIndex='0'
                 className='styles__Group-i6vatj-1 WPjxJ'
               >
                 <g id='QC' transform='translate(597.000000, 0.000000)'>
@@ -211,7 +202,6 @@ export const NowServing = () => {
                 aria-label='Newfoundland and Labrador'
                 aria-selected='false'
                 role='tab'
-                tabIndex='0'
                 className='styles__Group-i6vatj-1 WPjxJ'
               >
                 <g id='NL' transform='translate(748.000000, 14.000000)'>

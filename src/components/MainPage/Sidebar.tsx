@@ -1,16 +1,29 @@
-import React, { useEffect, useRef, useCallback } from 'react';
+import React, {
+  useEffect,
+  useRef,
+  useCallback,
+  Dispatch,
+  SetStateAction,
+  SyntheticEvent,
+} from 'react';
 import './style/Sidebar.scss';
 
-export const Sidebar = (props) => {
+interface Props {
+  showSidebar: boolean;
+  setShowSidebar: Dispatch<SetStateAction<boolean>>;
+  setShowModal: Dispatch<SetStateAction<boolean>>;
+}
+
+export const Sidebar = (props: Props) => {
   const { showSidebar, setShowSidebar, setShowModal } = props;
-  const sidebarModalRef = useRef();
+  const sidebarModalRef = useRef<HTMLHeadingElement>(null);
 
   const closeSidebarModal = useCallback(() => {
     setShowSidebar(false);
     document.body.style.overflow = 'unset'; // allow scrolling once modal close
   }, [setShowSidebar]);
 
-  const clickBackgroundToClose = (e) => {
+  const clickBackgroundToClose = (e: SyntheticEvent) => {
     if (sidebarModalRef.current === e.target) {
       closeSidebarModal();
     }

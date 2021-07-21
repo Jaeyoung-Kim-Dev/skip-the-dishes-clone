@@ -8,9 +8,11 @@ import { NowServing } from '../components/MainPage/NowServing';
 import { PopularCuisines } from '../components/MainPage/PopularCuisines';
 import { SkipRewards } from '../components/MainPage/SkipRewards';
 
-export const MainPage = () => {
+interface Props {}
+
+export const MainPage = (props: Props) => {
   return (
-    <div>
+    <>
       <Hero />
       <Benefits />
       <SkipRewards />
@@ -19,6 +21,6 @@ export const MainPage = () => {
       <NowServing />
       <PopularCuisines />
       <Footer />
-    </div>
+    </>
   );
 };

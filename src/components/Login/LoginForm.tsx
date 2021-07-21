@@ -34,7 +34,6 @@ export const LoginForm = () => {
           aria-label='Privacy Policy'
           href='https://policies.google.com/privacy'
           rel='noopener noreferrer'
-          tabIndex='-1'
           target='_blank'
         >
           Privacy Policy
@@ -44,7 +43,6 @@ export const LoginForm = () => {
           aria-label='Terms of Service'
           href='https://policies.google.com/terms'
           rel='noopener noreferrer'
-          tabIndex='-1'
           target='_blank'
         >
           Terms of Service
@@ -58,7 +56,9 @@ export const LoginForm = () => {
       >
         Log In
       </div>
-      <Link className='forgot-password'>Forgot Your Password?</Link>
+      <Link className='forgot-password' to='/'>
+        Forgot Your Password?
+      </Link>
     </form>
   );
 };

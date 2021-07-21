@@ -1,13 +1,26 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, {
+  useState,
+  useEffect,
+  useRef,
+  useCallback,
+  Dispatch,
+  SetStateAction,
+  SyntheticEvent,
+} from 'react';
 import './style/Login.scss';
 import { Link } from 'react-router-dom';
 import { GrClose } from 'react-icons/gr';
 import { LoginForm } from './LoginForm';
 
-export const Login = (props) => {
+interface Props {
+  showModal: boolean;
+  setShowModal: Dispatch<SetStateAction<boolean>>;
+}
+
+export const Login = (props: Props) => {
   const { showModal, setShowModal } = props;
   const [emailLogin, setEmailLogin] = useState(false);
-  const loginModalRef = useRef();
+  const loginModalRef = useRef<HTMLHeadingElement>(null);
 
   const closeLoginModal = useCallback(() => {
     setShowModal(false);
@@ -15,7 +28,7 @@ export const Login = (props) => {
     setEmailLogin(false);
   }, [setShowModal, setEmailLogin]);
 
-  const clickBackgroundToClose = (e) => {
+  const clickBackgroundToClose = (e: SyntheticEvent) => {
     if (loginModalRef.current === e.target) {
       closeLoginModal();
     }
@@ -102,7 +115,10 @@ export const Login = (props) => {
           )}
         </div>
         <div className='signup'>
-          Need an account? <Link className='signup-link'>Sign up</Link>
+          Need an account?{' '}
+          <Link to='/' className='signup-link'>
+            Sign up
+          </Link>
         </div>
       </div>
     </div>
