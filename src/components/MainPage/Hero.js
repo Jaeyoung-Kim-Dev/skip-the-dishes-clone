@@ -10,7 +10,7 @@ export const Hero = () => {
     <div className='hero-container'>
       <Navbar />
       <div className='centerMenu'>
-        <h1>EAT. PLAYOFFS. REPEAT</h1>
+        <h1>DO WHAT FEDDS YOU.</h1>
         <form>
           <svg viewBox='0 0 24 24'>
             <g transform='translate(2 1.5)'>
@@ -43,9 +43,9 @@ export const Hero = () => {
         <button>Find Restaurants In Your Area</button>
       </div>
       {isMobile ? (
-        <img src='images/mobile-large.webp' alt='mobile-large' />
+        <img src='images/mobile-large.jpeg' alt='mobile-large' />
       ) : (
-        <img src='images/desktop-large.webp' alt='desktop-large' />
+        <img src='images/desktop-large.jpeg' alt='desktop-large' />
       )}
     </div>
   );
